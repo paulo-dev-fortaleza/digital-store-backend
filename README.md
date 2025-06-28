@@ -13,7 +13,7 @@ O projeto oferece autenticação com JWT, testes automatizados com Jest e docume
 - **Swagger** – Documentação da API
 - **Dotenv** – Variáveis de ambiente
 
-⚙️ INSTALAÇÃO E CONFIGURAÇÃO:
+⚙️ INSTALAÇÃO E CONFIGURAÇÃO:                                                                                                                                           
     -------------------------
 ✅ PRÉ -REQUISITOS
 
@@ -23,21 +23,21 @@ Antes de começar, você precisa ter instalado:
 - Git (para clonar o repositório)
 - Postman (opcional, para testar a API)
 
-📥 CLONE O REPOSITÓRIO:
+📥 CLONE O REPOSITÓRIO:                                                                                                                                            
     -------------------
 git clone https://github.com/paulo-dev-fortaleza/digital-store-backend.git
 cd digital-store-backend
 
-📦 INSTALE AS DEPENDENCIAS:
+📦 INSTALE AS DEPENDENCIAS:                                                                                                                                   
    ------------------------
 npm install
 
-🛠️ CONFIGURE AS VARIÁVEIS DE AMBIENTE:
+🛠️ CONFIGURE AS VARIÁVEIS DE AMBIENTE:                                                                                                                             
     ----------------------------------
 Crie um arquivo .env com base no exemplo:
 cp .env.example .env
 
-EDITE O .env COM SUAS CONFIGURAÇÕES LOCAIS, COMO:
+EDITE O .env COM SUAS CONFIGURAÇÕES LOCAIS, COMO:                                                                                                                
 -------------------------------------------------
 DB_HOST=localhost
 DB_USER=seu_usuario_mysql
@@ -46,34 +46,34 @@ DB_NAME=digital_store
 JWT_SECRET=sua_chave_secreta
 PORT=3000
 
-🗃️ CONFIGURE O BANCO DE DADOS:
+🗃️ CONFIGURE O BANCO DE DADOS:                                                                                                                                
    ---------------------------
 Certifique-se de que o MySQL está rodando e execute os comandos abaixo para criar o banco, as tabelas e popular com dados iniciais:
 npx sequelize db:create
 npx sequelize db:migrate
 npx sequelize db:seed:all
 
-▶️ INICIE O SSERVIDOR:
+▶️ INICIE O SSERVIDOR:                                                                                                                                
     ------------------
 Em modo de desenvolvimento (com reinício automático):
 npm run dev
 
-EM MODO DE PRODUÇÃO:
+EM MODO DE PRODUÇÃO:                                                                                                                                  
 --------------------
 npm start
 
-A API ESTARÁ DISPONIVÉL EM:
+A API ESTARÁ DISPONIVÉL EM:                                                                                                                                  
 --------------------------
 📍 http://localhost:3000
 A documentação Swagger estará em:
 📚 http://localhost:3000/api-docs
 
-🧪 EXECUTE OS TESTES:
+🧪 EXECUTE OS TESTES:                                                                                                                                          
    ------------------
 Para rodar os testes automatizados:
 npm test
 
-BANCO DE DADOS:
+BANCO DE DADOS:                                                                                                                                                                                                                                                                                              
 ---------------
 npx sequelize db:create
 npx sequelize db:migrate
